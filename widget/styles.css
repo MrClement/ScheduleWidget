@@ -1,0 +1,177 @@
+
+body {
+    margin: 0px;
+    font-family: "Raleway", sans-serif;
+}
+
+#rectangleShape {
+    position: absolute;
+    width: 734px;
+    height: 209px;
+    /*-webkit-border-image: url(Parts/Images/rectangleShape.png) 0 1 fill stretch;*/
+    /*-moz-border-image: url(Parts/Images/rectangleShape.png) 0 1 fill stretch;*/
+    background: rgba(42, 60, 77, 0.98);
+    border-width: 0px 1px;
+    left: 0px;
+    top: 0px;
+}
+
+#text2 {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    position: absolute;
+    margin-top: 0px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    left: 48px;
+    font-size: 12pt;
+    top: 16px;
+    width: auto;
+    height: auto;
+    right: 644px;
+    bottom: 177px;
+}
+
+.selected #text2 {
+    color: white;
+}
+
+#dateTimeLabel {
+    text-overflow: ellipsis;
+    overflow: visible;
+    position: absolute;
+    margin-top: 0px;
+    text-align: right;
+    color: rgb(255, 255, 255);
+    left: 308px;
+    font-size: 30pt;
+    top: 8px;
+    width: auto;
+    height: auto;
+    right: 15px;
+    bottom: 169px;
+}
+
+.selected #dateTimeLabel {
+    color: white;
+}
+
+#text3 {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    position: absolute;
+    margin-top: 0px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    left: 152px;
+    font-size: 12pt;
+    top: 16px;
+    width: auto;
+    height: auto;
+    right: 506px;
+    bottom: 177px;
+}
+
+.selected #text3 {
+    color: white;
+}
+
+#text5 {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    position: absolute;
+    margin-top: 0px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    left: 134px;
+    font-size: 12pt;
+    top: 74px;
+    width: auto;
+    height: auto;
+    right: 506px;
+    bottom: 119px;
+}
+
+.selected #text5 {
+    color: white;
+}
+
+#text6 {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    position: absolute;
+    margin-top: 0px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    left: 135px;
+    font-size: 12pt;
+    top: 142px;
+    width: auto;
+    height: auto;
+    right: 505px;
+    bottom: 51px;
+}
+
+.selected #text6 {
+    color: white;
+}
+
+#dayLabel {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    position: absolute;
+    margin-top: 0px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    left: 4px;
+    font-size: 103pt;
+    top: 44px;
+    width: auto;
+    height: auto;
+    right: 601px;
+    bottom: 15px;
+}
+
+.selected #dayLabel {
+    color: white;
+}
+
+#nowLabel {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    position: absolute;
+    margin-top: 0px;
+    text-align: left;
+    color: rgb(255, 255, 255);
+    left: 227px;
+    font-size: 26pt;
+    top: 60px;
+    width: auto;
+    height: auto;
+    right: 29px;
+    bottom: 110px;
+}
+
+.selected #nowLabel {
+    color: white;
+}
+
+#nextLabel {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    position: absolute;
+    margin-top: 0px;
+    text-align: left;
+    color: rgb(255, 255, 255);
+    left: 227px;
+    font-size: 26pt;
+    top: 130px;
+    width: auto;
+    height: auto;
+    right: 29px;
+    bottom: 40px;
+}
+
+.selected #nextLabel {
+    color: white;
+}
