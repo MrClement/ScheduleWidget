@@ -13,7 +13,6 @@ class Clock {
             this.target.innerHTML = this.getTime();
         }.bind(this), 1000);
     }
-
     getTime() {
         const date = new Date();
         return date.toLocaleString('en-US', {
@@ -55,7 +54,20 @@ class APILink {
                 }
             }
             if(nextPeriod) {
-                next.innerHTML = nextPeriod.title;
+                let date: Date = new Date(nextPeriod.start_time);
+                let startTime: string = date.toLocaleString('en-US', {
+                    hour12: true,
+                    hour: "numeric", 
+                    minute: "numeric"
+                });
+                date = new Date(nextPeriod.end_time);
+                let endTime: string = date.toLocaleString('en-US', {
+                    hour12: true,
+                    hour: "numeric", 
+                    minute: "numeric"
+                });
+                let textToDisplay: string = `${nextPeriod.title} (${startTime.substring(0, startTime.length-3)} - ${endTime.substring(0, endTime.length-3)})`;
+                next.innerHTML = textToDisplay;
             } else {
                 next.innerHTML = "-";
             }
@@ -65,7 +77,20 @@ class APILink {
                 type.innerHTML = "-";
             }
             if(currentPeriod.title) {
-                now.innerHTML = currentPeriod.title;
+                let date: Date = new Date(currentPeriod.start_time);
+                let startTime: string = date.toLocaleString('en-US', {
+                    hour12: true,
+                    hour: "numeric", 
+                    minute: "numeric"
+                });
+                date = new Date(currentPeriod.end_time);
+                let endTime: string = date.toLocaleString('en-US', {
+                    hour12: true,
+                    hour: "numeric", 
+                    minute: "numeric"
+                });
+                let textToDisplay: string = `${currentPeriod.title} (${startTime.substring(0, startTime.length-3)} - ${endTime.substring(0, endTime.length-3)})`;
+                now.innerHTML = textToDisplay;
             } else if(nextPeriod) {
                 now.innerHTML = "Break";
             } else {

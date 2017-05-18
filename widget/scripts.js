@@ -54,7 +54,20 @@ class APILink {
                     }
                 }
                 if (nextPeriod) {
-                    next.innerHTML = nextPeriod.title;
+                    let date = new Date(nextPeriod.start_time);
+                    let startTime = date.toLocaleString('en-US', {
+                        hour12: true,
+                        hour: "numeric",
+                        minute: "numeric"
+                    });
+                    date = new Date(nextPeriod.end_time);
+                    let endTime = date.toLocaleString('en-US', {
+                        hour12: true,
+                        hour: "numeric",
+                        minute: "numeric"
+                    });
+                    let textToDisplay = `${nextPeriod.title} (${startTime.substring(0, startTime.length - 3)} - ${endTime.substring(0, endTime.length - 3)})`;
+                    next.innerHTML = textToDisplay;
                 }
                 else {
                     next.innerHTML = "-";
@@ -66,7 +79,20 @@ class APILink {
                     type.innerHTML = "-";
                 }
                 if (currentPeriod.title) {
-                    now.innerHTML = currentPeriod.title;
+                    let date = new Date(currentPeriod.start_time);
+                    let startTime = date.toLocaleString('en-US', {
+                        hour12: true,
+                        hour: "numeric",
+                        minute: "numeric"
+                    });
+                    date = new Date(currentPeriod.end_time);
+                    let endTime = date.toLocaleString('en-US', {
+                        hour12: true,
+                        hour: "numeric",
+                        minute: "numeric"
+                    });
+                    let textToDisplay = `${currentPeriod.title} (${startTime.substring(0, startTime.length - 3)} - ${endTime.substring(0, endTime.length - 3)})`;
+                    now.innerHTML = textToDisplay;
                 }
                 else if (nextPeriod) {
                     now.innerHTML = "Break";

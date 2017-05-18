@@ -85,11 +85,11 @@ body {
     color: rgb(255, 255, 255);
     left: 134px;
     font-size: 12pt;
-    top: 74px;
+    top: 79px;
     width: auto;
     height: auto;
     right: 506px;
-    bottom: 119px;
+    bottom: 114px;
 }
 
 .selected #text5 {
@@ -105,11 +105,11 @@ body {
     color: rgb(255, 255, 255);
     left: 135px;
     font-size: 12pt;
-    top: 142px;
+    top: 147px;
     width: auto;
     height: auto;
     right: 505px;
-    bottom: 51px;
+    bottom: 46px;
 }
 
 .selected #text6 {
@@ -145,11 +145,11 @@ body {
     color: rgb(255, 255, 255);
     left: 227px;
     font-size: 26pt;
-    top: 60px;
+    top: 65px;
     width: auto;
     height: auto;
     right: 29px;
-    bottom: 110px;
+    bottom: 105px;
 }
 
 .selected #nowLabel {
@@ -165,11 +165,11 @@ body {
     color: rgb(255, 255, 255);
     left: 227px;
     font-size: 26pt;
-    top: 130px;
+    top: 135px;
     width: auto;
     height: auto;
     right: 29px;
-    bottom: 40px;
+    bottom: 35px;
 }
 
 .selected #nextLabel {
