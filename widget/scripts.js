@@ -95,7 +95,7 @@ class APILink {
                     now.innerHTML = textToDisplay;
                 }
                 else if (nextPeriod) {
-                    now.innerHTML = "Break";
+                    now.innerHTML = "Passing";
                 }
                 else {
                     now.innerHTML = "-";

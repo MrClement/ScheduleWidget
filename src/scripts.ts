@@ -92,7 +92,7 @@ class APILink {
                 let textToDisplay: string = `${currentPeriod.title} (${startTime.substring(0, startTime.length-3)} - ${endTime.substring(0, endTime.length-3)})`;
                 now.innerHTML = textToDisplay;
             } else if(nextPeriod) {
-                now.innerHTML = "Break";
+                now.innerHTML = "Passing";
             } else {
                 now.innerHTML = "-"
             }
